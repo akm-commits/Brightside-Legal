@@ -1,0 +1,5 @@
+Project rules:
+- Keep `index.html` in the repository root for GitHub Pages.
+- Use relative paths for all images, video posters, icons, and media assets.
+- Store CSS in `/css` and JavaScript in `/js`.
+- Avoid absolute URLs for local assets to prevent GitHub Pages path issues.

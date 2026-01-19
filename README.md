@@ -9,6 +9,13 @@ Open `index.html` directly in a browser, or serve the directory with a static se
 - `python -m http.server`
 - `npx serve`
 
+## Directory structure
+
+- `index.html` (root)
+- `css/style.css`
+- `js/script.js`
+- `assets/`
+
 ## Deploy to GitHub Pages
 
 1. Push this repository to GitHub.
