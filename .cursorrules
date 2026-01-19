@@ -1,0 +1,19 @@
+Act as a High-Fidelity Full-Stack Developer. We are building "Brightside AI".
+The aesthetic is "Surgical Consultancy".
+Use Tailwind CSS with the App Router in Next.js.
+Colors:
+- Midnight Onyx (#0F172A) for backgrounds.
+- Ghost White (#F8FAFC) for text.
+- Kinetic Gold (#D4AF37) for accents.
+Fonts:
+- Inter for headers.
+- Merriweather for body.
+- JetBrains Mono for numeric telemetry.
+Tone is clinical, professional, authoritative.
+Avoid playful UI elements. Use beveled edges and high-contrast layouts.
+
+Project rules:
+- Routes live in `src/app` as `page.tsx` files.
+- Use relative paths for all images, video posters, icons, and media assets.
+- Store static assets in `public/`.
+- Avoid absolute URLs for local assets to prevent GitHub Pages path issues.
