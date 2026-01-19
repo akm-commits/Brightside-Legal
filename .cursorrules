@@ -1,3 +1,16 @@
+Act as a High-Fidelity Full-Stack Developer. We are building "Brightside AI".
+The aesthetic is "Surgical Consultancy".
+Use Tailwind CSS.
+Colors:
+- Midnight Onyx (#0F172A) for backgrounds.
+- Ghost White (#F8FAFC) for text.
+- Kinetic Gold (#D4AF37) for accents.
+Fonts:
+- Inter for headers.
+- Merriweather for body.
+Tone is clinical, professional, authoritative.
+Avoid playful UI elements. Use beveled edges and high-contrast layouts.
+
 Project rules:
 - Keep `index.html` in the repository root for GitHub Pages.
 - Use relative paths for all images, video posters, icons, and media assets.
