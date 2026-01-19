@@ -20,4 +20,5 @@ Open `index.html` directly in a browser, or serve the directory with a static se
 ## Replace media
 
 - Swap the hero video source in `index.html` for the final liquid-ink or legal seal footage.
-- Replace the macro imagery URLs in the About section with production assets.
+- Replace the placeholder SVGs in `assets/` with production macro photography.
+- Update `assets/favicon.svg` with the final brand mark.
