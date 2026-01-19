@@ -11,19 +11,17 @@ const profiles = [
 
 export default function ArchitecturePage() {
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+    <main className="min-h-screen bg-midnight-onyx text-ghost-white">
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-24">
         <header className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
             The Architecture
           </p>
           <h1 className="mt-4 text-balance text-4xl font-extrabold md:text-6xl">
-            <span className="font-['Inter']">Clinical Precision, Governed Velocity</span>
+            Clinical Precision, Governed Velocity
           </h1>
-          <p className="mt-4 text-base text-slate-300 md:text-lg">
-            <span className="font-['Merriweather']">
-              Two primary operators ensure every logic gate meets legal-grade integrity.
-            </span>
+          <p className="mt-4 text-base text-surgical-slate md:text-lg">
+            Two primary operators ensure every logic gate meets legal-grade integrity.
           </p>
         </header>
 
@@ -44,15 +42,11 @@ export default function ArchitecturePage() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kinetic-gold">
                     {profile.title}
                   </p>
-                  <h2 className="mt-3 text-2xl font-semibold">
-                    <span className="font-['Inter']">{profile.title}</span>
-                  </h2>
-                  <p className="mt-3 text-sm text-slate-300">
-                    <span className="font-['Merriweather']">{profile.role}</span>
-                  </p>
+                  <h2 className="mt-3 text-2xl font-semibold">{profile.title}</h2>
+                  <p className="mt-3 text-sm text-surgical-slate">{profile.role}</p>
                 </div>
               </div>
             </article>
@@ -61,27 +55,25 @@ export default function ArchitecturePage() {
 
         <section className="rounded-none border border-slate-700/60 bg-[#0B1324] px-6 py-10">
           <div className="flex flex-col gap-4 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
               Logic Gate Comparison
             </p>
             <h2 className="text-3xl font-semibold">
-              <span className="font-['Inter']">Traditional AI vs. Brightside Logic Gates</span>
+              Traditional AI vs. Brightside Logic Gates
             </h2>
           </div>
 
           <div className="mt-8 overflow-hidden rounded-none border border-slate-700/60">
-            <div className="grid grid-cols-2 bg-[#0F172A] text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+            <div className="grid grid-cols-2 bg-midnight-onyx text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
               <span className="px-5 py-4">Traditional AI</span>
-              <span className="px-5 py-4 text-[#D4AF37]">Brightside Logic Gates</span>
+              <span className="px-5 py-4 text-kinetic-gold">Brightside Logic Gates</span>
             </div>
             <div className="grid grid-cols-2 border-t border-slate-700/60">
-              <div className="px-5 py-6 text-sm text-slate-300">
-                <span className="font-['Merriweather']">High Risk / Low Fidelity</span>
+              <div className="px-5 py-6 text-sm text-surgical-slate">
+                High Risk / Low Fidelity
               </div>
-              <div className="px-5 py-6 text-sm text-[#F8FAFC]">
-                <span className="font-['Merriweather']">
-                  Governor-Led / 100% PII Redaction
-                </span>
+              <div className="px-5 py-6 text-sm text-ghost-white">
+                Governor-Led / 100% PII Redaction
               </div>
             </div>
           </div>
@@ -89,17 +81,15 @@ export default function ArchitecturePage() {
 
         <section className="rounded-none border border-slate-700/60 bg-[#0B1324] px-6 py-10">
           <div className="flex flex-col gap-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
               140W Standard
             </p>
             <h2 className="text-3xl font-semibold">
-              <span className="font-['Inter']">Uninterrupted Power, Clinical Precision</span>
+              Uninterrupted Power, Clinical Precision
             </h2>
-            <p className="text-base text-slate-300">
-              <span className="font-['Merriweather']">
-                We operate at a 140W standard to guarantee uninterrupted power delivery,
-                deterministic governance, and surgical accuracy for every audit sequence.
-              </span>
+            <p className="text-base text-surgical-slate">
+              We operate at a 140W standard to guarantee uninterrupted power delivery,
+              deterministic governance, and surgical accuracy for every audit sequence.
             </p>
           </div>
         </section>

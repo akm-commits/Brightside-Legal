@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo, useState } from "react";
 
 const HOURLY_RATE = 300;
@@ -11,26 +13,22 @@ export default function HomePage() {
   }, [hoursPerWeek]);
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+    <main className="min-h-screen bg-midnight-onyx text-ghost-white">
       <section className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center gap-8 px-6 text-center">
         <div className="flex flex-col gap-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
             Clinical Sovereignty
           </p>
           <h1 className="text-balance text-4xl font-extrabold leading-tight md:text-6xl">
-            <span className="font-['Inter']">
-              Architecting Autonomous Logic Gates for the Sacramento Legal Sector.
-            </span>
+            Architecting Autonomous Logic Gates for the Sacramento Legal Sector.
           </h1>
-          <p className="text-lg text-slate-300 md:text-xl">
-            <span className="font-['Merriweather']">
-              Resolve Administrative Friction through Human-in-the-Loop Governance.
-            </span>
+          <p className="text-lg text-surgical-slate md:text-xl">
+            Resolve Administrative Friction through Human-in-the-Loop Governance.
           </p>
         </div>
 
         <button
-          className="bg-[#D4AF37] px-8 py-3 text-sm font-extrabold uppercase tracking-[0.25em] text-[#0F172A] shadow-[0_12px_40px_rgba(212,175,55,0.25)] transition hover:-translate-y-0.5"
+          className="bg-kinetic-gold px-8 py-3 text-sm font-extrabold uppercase tracking-[0.25em] text-midnight-onyx shadow-[0_12px_40px_rgba(212,175,55,0.25)] transition hover:-translate-y-0.5"
           style={{ clipPath: "polygon(5% 0, 100% 0, 95% 100%, 0 100%)" }}
           type="button"
         >
@@ -43,10 +41,10 @@ export default function HomePage() {
               Friction Calculator
             </p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-slate-300">
+              <span className="text-sm text-surgical-slate">
                 Hours wasted on discovery per week
               </span>
-              <span className="font-['JetBrains_Mono'] text-xl text-[#D4AF37]">
+              <span className="font-mono text-xl text-kinetic-gold">
                 {hoursPerWeek} hrs
               </span>
             </div>
@@ -54,7 +52,7 @@ export default function HomePage() {
 
           <input
             aria-label="Hours wasted on discovery per week"
-            className="mt-6 w-full accent-[#D4AF37]"
+            className="mt-6 w-full accent-kinetic-gold"
             max={40}
             min={0}
             onChange={(event) => setHoursPerWeek(Number(event.target.value))}
@@ -67,7 +65,7 @@ export default function HomePage() {
             <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
               Annual Revenue Recovered
             </p>
-            <p className="mt-2 font-['JetBrains_Mono'] text-2xl text-[#F8FAFC]">
+            <p className="mt-2 font-mono text-2xl text-ghost-white">
               ${annualRevenueRecovered.toLocaleString()}
             </p>
           </div>

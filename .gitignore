@@ -19,6 +19,8 @@ out/
 .cache/
 .parcel-cache/
 .next/
+.vercel/
+.turbo/
 .nuxt/
 .svelte-kit/
 coverage/

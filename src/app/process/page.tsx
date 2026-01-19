@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 
 const clamp = (value: number, min: number, max: number) =>
@@ -65,7 +67,7 @@ export default function ProcessPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+    <main className="min-h-screen bg-midnight-onyx text-ghost-white">
       <section
         className="relative min-h-screen px-6 py-24"
         style={{
@@ -76,16 +78,14 @@ export default function ProcessPage() {
       >
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-10">
           <div className="flex flex-col gap-4 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
               The Clinical Flow
             </p>
             <h1 className="text-balance text-4xl font-extrabold leading-tight md:text-6xl">
-              <span className="font-['Inter']">7-Day Audit Signal Path</span>
+              7-Day Audit Signal Path
             </h1>
-            <p className="text-lg text-slate-300 md:text-xl">
-              <span className="font-['Merriweather']">
-                A vertical governance sequence calibrated for precision and authority.
-              </span>
+            <p className="text-lg text-surgical-slate md:text-xl">
+              A vertical governance sequence calibrated for precision and authority.
             </p>
           </div>
 
@@ -96,11 +96,11 @@ export default function ProcessPage() {
             <div className="relative flex justify-center">
               <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-slate-700/70" />
               <div
-                className="absolute left-1/2 top-0 w-px -translate-x-1/2 bg-[#D4AF37] shadow-[0_0_30px_rgba(212,175,55,0.6)]"
+                className="absolute left-1/2 top-0 w-px -translate-x-1/2 bg-kinetic-gold shadow-[0_0_30px_rgba(212,175,55,0.6)]"
                 style={{ height: `${progress * 100}%` }}
               />
               <div
-                className="absolute left-1/2 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D4AF37] shadow-[0_0_24px_rgba(212,175,55,0.9)]"
+                className="absolute left-1/2 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-kinetic-gold shadow-[0_0_24px_rgba(212,175,55,0.9)]"
                 style={{ top: `${progress * 100}%` }}
               />
             </div>
@@ -115,15 +115,15 @@ export default function ProcessPage() {
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                       Step {index + 1}
                     </p>
-                    <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">
+                    <span className="text-xs font-semibold uppercase tracking-[0.3em] text-kinetic-gold">
                       {step.title}
                     </span>
                   </div>
-                  <h2 className="mt-4 text-2xl font-semibold text-[#F8FAFC]">
-                    <span className="font-['Inter']">{step.title}</span>
+                  <h2 className="mt-4 text-2xl font-semibold text-ghost-white">
+                    {step.title}
                   </h2>
-                  <p className="mt-3 text-base text-slate-300">
-                    <span className="font-['Merriweather']">{step.detail}</span>
+                  <p className="mt-3 text-base text-surgical-slate">
+                    {step.detail}
                   </p>
                 </article>
               ))}

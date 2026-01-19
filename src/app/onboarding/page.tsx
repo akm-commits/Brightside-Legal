@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useMemo, useState } from "react";
 
 const steps = [
@@ -57,7 +59,7 @@ export default function SanctuaryOnboarding() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+    <main className="min-h-screen bg-midnight-onyx text-ghost-white">
       <section className="relative min-h-screen px-6 py-20">
         <div
           className="pointer-events-none absolute inset-0 opacity-40"
@@ -70,22 +72,20 @@ export default function SanctuaryOnboarding() {
 
         <div className="relative mx-auto flex w-full max-w-4xl flex-col gap-10">
           <header className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
               Sanctuary Onboarding Portal
             </p>
             <h1 className="mt-4 text-balance text-4xl font-extrabold md:text-5xl">
-              <span className="font-['Inter']">Secure Medical Terminal</span>
+              Secure Medical Terminal
             </h1>
-            <p className="mt-3 text-base text-slate-300 md:text-lg">
-              <span className="font-['Merriweather']">
-                Provide operational inputs to initiate the 7-day audit sequence.
-              </span>
+            <p className="mt-3 text-base text-surgical-slate md:text-lg">
+              Provide operational inputs to initiate the 7-day audit sequence.
             </p>
           </header>
 
           <div className="h-[2px] w-full bg-slate-700/50">
             <span
-              className="block h-full bg-[#D4AF37]"
+              className="block h-full bg-kinetic-gold"
               style={{ width: progressWidth }}
             />
           </div>
@@ -96,45 +96,43 @@ export default function SanctuaryOnboarding() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                   Step {activeStep + 1} of {steps.length}
                 </p>
-                <h2 className="mt-2 text-2xl font-semibold">
-                  <span className="font-['Inter']">{steps[activeStep].title}</span>
-                </h2>
+                <h2 className="mt-2 text-2xl font-semibold">{steps[activeStep].title}</h2>
               </div>
-              <p className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+              <p className="text-sm uppercase tracking-[0.25em] text-kinetic-gold">
                 {steps[activeStep].description}
               </p>
             </div>
 
             {activeStep === 0 && (
               <div className="mt-8 grid gap-6 md:grid-cols-2">
-                <label className="flex flex-col gap-2 text-sm text-slate-300">
+                <label className="flex flex-col gap-2 text-sm text-surgical-slate">
                   Firm Name
                   <input
-                    className="border border-slate-700/60 bg-[#0F172A] px-4 py-3 text-[#F8FAFC] outline-none focus:border-[#D4AF37]"
+                    className="border border-slate-700/60 bg-midnight-onyx px-4 py-3 text-ghost-white outline-none focus:border-kinetic-gold"
                     placeholder="Sacramento Legal Office"
                     type="text"
                   />
                 </label>
-                <label className="flex flex-col gap-2 text-sm text-slate-300">
+                <label className="flex flex-col gap-2 text-sm text-surgical-slate">
                   Primary Contact
                   <input
-                    className="border border-slate-700/60 bg-[#0F172A] px-4 py-3 text-[#F8FAFC] outline-none focus:border-[#D4AF37]"
+                    className="border border-slate-700/60 bg-midnight-onyx px-4 py-3 text-ghost-white outline-none focus:border-kinetic-gold"
                     placeholder="Governor of Operations"
                     type="text"
                   />
                 </label>
-                <label className="flex flex-col gap-2 text-sm text-slate-300">
+                <label className="flex flex-col gap-2 text-sm text-surgical-slate">
                   Secure Email
                   <input
-                    className="border border-slate-700/60 bg-[#0F172A] px-4 py-3 text-[#F8FAFC] outline-none focus:border-[#D4AF37]"
+                    className="border border-slate-700/60 bg-midnight-onyx px-4 py-3 text-ghost-white outline-none focus:border-kinetic-gold"
                     placeholder="governor@firm.gov"
                     type="email"
                   />
                 </label>
-                <label className="flex flex-col gap-2 text-sm text-slate-300">
+                <label className="flex flex-col gap-2 text-sm text-surgical-slate">
                   Jurisdiction
                   <input
-                    className="border border-slate-700/60 bg-[#0F172A] px-4 py-3 text-[#F8FAFC] outline-none focus:border-[#D4AF37]"
+                    className="border border-slate-700/60 bg-midnight-onyx px-4 py-3 text-ghost-white outline-none focus:border-kinetic-gold"
                     placeholder="Sacramento County"
                     type="text"
                   />
@@ -147,11 +145,11 @@ export default function SanctuaryOnboarding() {
                 {surveyQuestions.map((question) => (
                   <label
                     key={question}
-                    className="flex flex-col gap-2 text-sm text-slate-300"
+                    className="flex flex-col gap-2 text-sm text-surgical-slate"
                   >
                     {question}
                     <input
-                      className="border border-slate-700/60 bg-[#0F172A] px-4 py-3 text-[#F8FAFC] outline-none focus:border-[#D4AF37]"
+                      className="border border-slate-700/60 bg-midnight-onyx px-4 py-3 text-ghost-white outline-none focus:border-kinetic-gold"
                       placeholder="Enter telemetry detail"
                       type="text"
                     />
@@ -163,8 +161,8 @@ export default function SanctuaryOnboarding() {
             {activeStep === 2 && (
               <div className="mt-8 grid gap-6">
                 <div
-                  className={`relative flex min-h-[220px] flex-col items-center justify-center gap-4 border border-dashed border-slate-600/70 bg-[#0F172A] px-6 text-center transition ${
-                    isScanning ? "border-[#D4AF37]" : ""
+                  className={`relative flex min-h-[220px] flex-col items-center justify-center gap-4 border border-dashed border-slate-600/70 bg-midnight-onyx px-6 text-center transition ${
+                    isScanning ? "border-kinetic-gold" : ""
                   }`}
                   onDragOver={(event) => event.preventDefault()}
                   onDrop={handleDrop}
@@ -180,7 +178,7 @@ export default function SanctuaryOnboarding() {
                   <p className="text-base text-slate-200">
                     Drag and drop PDFs to initiate scan.
                   </p>
-                  <p className="text-xs uppercase tracking-[0.35em] text-[#D4AF37]">
+                  <p className="text-xs uppercase tracking-[0.35em] text-kinetic-gold">
                     Initializing Redaction Protocols
                   </p>
                   {isScanning && (
@@ -197,14 +195,14 @@ export default function SanctuaryOnboarding() {
 
             <div className="mt-10 flex items-center justify-between">
               <button
-                className="border border-slate-600/60 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-200 transition hover:border-[#D4AF37]"
+                className="border border-slate-600/60 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-200 transition hover:border-kinetic-gold"
                 onClick={() => moveStep(-1)}
                 type="button"
               >
                 Back
               </button>
               <button
-                className="bg-[#D4AF37] px-6 py-2 text-xs font-extrabold uppercase tracking-[0.3em] text-[#0F172A] shadow-[0_10px_30px_rgba(212,175,55,0.25)] transition hover:-translate-y-0.5"
+                className="bg-kinetic-gold px-6 py-2 text-xs font-extrabold uppercase tracking-[0.3em] text-midnight-onyx shadow-[0_10px_30px_rgba(212,175,55,0.25)] transition hover:-translate-y-0.5"
                 onClick={() => moveStep(1)}
                 style={{ clipPath: "polygon(5% 0, 100% 0, 95% 100%, 0 100%)" }}
                 type="button"

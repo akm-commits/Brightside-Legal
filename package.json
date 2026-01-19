@@ -1,0 +1,37 @@
+{
+  "name": "brightside-ai",
+  "version": "0.1.0",
+  "description": "Brightside AI clinical sovereignty web app",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akm-commits/Brightside-Legal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akm-commits/Brightside-Legal/issues"
+  },
+  "homepage": "https://github.com/akm-commits/Brightside-Legal#readme",
+  "dependencies": {
+    "next": "^16.1.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.3",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,31 +1,33 @@
-# Brightside AI - Clinical Sovereignty Website
+# Brightside AI | Clinical Sovereignty
 
-Single-page static site implementing the Brightside AI Technical UI/UX Manifesto.
+Next.js App Router build of the Brightside AI clinical sovereignty environment.
 
-## Local preview
+## Local development
 
-Open `index.html` directly in a browser, or serve the directory with a static server:
+1. `npm install`
+2. `npm run dev`
 
-- `python -m http.server`
-- `npx serve`
+## Routes
 
-## Directory structure
+- `/` Home
+- `/process` 7-day audit signal path
+- `/onboarding` Sanctuary portal
+- `/about` Architecture overview
+- `/dashboard` Command Center
 
-- `index.html` (root)
-- `css/style.css`
-- `js/script.js`
-- `assets/`
+## Style guide
 
-## Deploy to GitHub Pages
+Tailwind colors are defined in `tailwind.config.ts`:
 
-1. Push this repository to GitHub.
-2. In GitHub, go to Settings -> Pages.
-3. Select "Deploy from a branch".
-4. Choose the `main` branch (or your target branch) and `/root`.
-5. Save. GitHub Pages will publish the site.
+- Midnight Onyx: `#0F172A`
+- Kinetic Gold: `#D4AF37`
+- Ghost White: `#F8FAFC`
+- Surgical Slate: `#64748B`
 
-## Replace media
+Typography is managed in `src/app/layout.tsx` with Inter, Merriweather, and
+JetBrains Mono.
 
-- Swap the hero video source in `index.html` for the final liquid-ink or legal seal footage.
-- Replace the placeholder SVGs in `assets/` with production macro photography.
-- Update `assets/favicon.svg` with the final brand mark.
+## Media
+
+Static assets live in `public/assets`. Replace the SVG placeholders with
+production photography when ready.

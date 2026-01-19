@@ -32,19 +32,17 @@ const sentinelStatuses = [
 
 export default function DashboardCommandCenter() {
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+    <main className="min-h-screen bg-midnight-onyx text-ghost-white">
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col gap-10 px-6 py-20">
         <header className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#D4AF37]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-kinetic-gold">
             Command Center
           </p>
           <h1 className="mt-4 text-balance text-4xl font-extrabold md:text-6xl">
-            <span className="font-['Inter']">Client Telemetry Dashboard</span>
+            Client Telemetry Dashboard
           </h1>
-          <p className="mt-3 text-base text-slate-300 md:text-lg">
-            <span className="font-['Merriweather']">
-              High-authority monitoring for governed logic gate performance.
-            </span>
+          <p className="mt-3 text-base text-surgical-slate md:text-lg">
+            High-authority monitoring for governed logic gate performance.
           </p>
         </header>
 
@@ -54,7 +52,7 @@ export default function DashboardCommandCenter() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                 Fidelity Score
               </p>
-              <span className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+              <span className="text-xs uppercase tracking-[0.3em] text-kinetic-gold">
                 Target 100%
               </span>
             </div>
@@ -84,13 +82,11 @@ export default function DashboardCommandCenter() {
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Current</p>
-                  <p className="font-['JetBrains_Mono'] text-3xl text-[#F8FAFC]">
-                    98%
-                  </p>
+                  <p className="font-mono text-3xl text-ghost-white">98%</p>
                 </div>
               </div>
             </div>
-            <p className="mt-6 text-center text-sm text-slate-300">
+            <p className="mt-6 text-center text-sm text-surgical-slate">
               Fidelity stabilized within clinical tolerance.
             </p>
           </article>
@@ -100,12 +96,12 @@ export default function DashboardCommandCenter() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                 Billable Hours Recovered
               </p>
-              <span className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+              <span className="text-xs uppercase tracking-[0.3em] text-kinetic-gold">
                 30-Day Window
               </span>
             </div>
             <div className="mt-10 text-center">
-              <p className="font-['JetBrains_Mono'] text-5xl text-[#D4AF37]">1,280</p>
+              <p className="font-mono text-5xl text-kinetic-gold">1,280</p>
               <p className="mt-3 text-sm uppercase tracking-[0.3em] text-slate-400">
                 Hours Recovered
               </p>
@@ -121,7 +117,7 @@ export default function DashboardCommandCenter() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                 Reputation Pulse
               </p>
-              <span className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+              <span className="text-xs uppercase tracking-[0.3em] text-kinetic-gold">
                 Google Reviews
               </span>
             </div>
@@ -129,15 +125,17 @@ export default function DashboardCommandCenter() {
               {reviews.map((review) => (
                 <div
                   key={review.author}
-                  className="border border-slate-700/60 bg-[#0F172A] px-4 py-4"
+                  className="border border-slate-700/60 bg-midnight-onyx px-4 py-4"
                 >
                   <div className="flex items-center justify-between">
-                    <p className="text-sm font-semibold text-[#F8FAFC]">{review.author}</p>
-                    <span className="font-['JetBrains_Mono'] text-sm text-[#D4AF37]">
+                    <p className="text-sm font-semibold text-ghost-white">
+                      {review.author}
+                    </p>
+                    <span className="font-mono text-sm text-kinetic-gold">
                       {review.rating}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm text-slate-300">{review.summary}</p>
+                  <p className="mt-2 text-sm text-surgical-slate">{review.summary}</p>
                   <p className="mt-3 text-xs uppercase tracking-[0.3em] text-slate-500">
                     {review.time}
                   </p>
@@ -151,7 +149,7 @@ export default function DashboardCommandCenter() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
                 Sentinel Health
               </p>
-              <span className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+              <span className="text-xs uppercase tracking-[0.3em] text-kinetic-gold">
                 Live Status
               </span>
             </div>
@@ -159,10 +157,10 @@ export default function DashboardCommandCenter() {
               {sentinelStatuses.map((service) => (
                 <div
                   key={service.label}
-                  className="flex items-center justify-between border border-slate-700/60 bg-[#0F172A] px-4 py-4"
+                  className="flex items-center justify-between border border-slate-700/60 bg-midnight-onyx px-4 py-4"
                 >
                   <div>
-                    <p className="text-sm font-semibold text-[#F8FAFC]">
+                    <p className="text-sm font-semibold text-ghost-white">
                       {service.label}
                     </p>
                     <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
@@ -170,8 +168,8 @@ export default function DashboardCommandCenter() {
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="h-3 w-3 rounded-full bg-[#D4AF37] shadow-[0_0_12px_rgba(212,175,55,0.8)]" />
-                    <span className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+                    <span className="h-3 w-3 rounded-full bg-kinetic-gold shadow-[0_0_12px_rgba(212,175,55,0.8)]" />
+                    <span className="text-xs uppercase tracking-[0.3em] text-kinetic-gold">
                       Stable
                     </span>
                   </div>
